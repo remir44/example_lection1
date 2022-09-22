@@ -5,9 +5,13 @@
     if (arg3 > result) result = arg3;
     return result;
 }
+//               0   1   2   3   4   5   6   7   8
+int[] array = { 11, 32, 63, 444, 15, 26, 70, 28, 99 };
 
-
-
-int max = Max(Max(a1, a2, a3), Max(b1, b2, b3), Max(c1, c2, c3));
+int max = Max(
+    Max(array[0],array[1],array[2]), 
+    Max(array[3],array[4],array[5]), 
+    Max(array[6],array[7],array[8])
+);
 
 Console.WriteLine(max);
